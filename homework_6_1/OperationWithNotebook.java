@@ -26,6 +26,7 @@ public class OperationWithNotebook {
                 case "operatingSystem" -> valueNotebooks = notebook.getOperatingSystem();
                 case "price" -> valueNotebooks = notebook.getPrice();
                 case "model" -> valueNotebooks = notebook.getModel();
+                case "color" -> valueNotebooks = notebook.getColor();
                 default -> {
                     continue;
                 }
@@ -83,6 +84,7 @@ public class OperationWithNotebook {
         map.put("operatingSystem", "Операционная система");
         map.put("price", "цена");
         map.put("model", "модель");
+        map.put("color", "цвет");
 
         return map;
 
@@ -95,6 +97,7 @@ public class OperationWithNotebook {
         list.add("operatingSystem");
         list.add("price");
         list.add("model");
+        list.add("color");
 
         return list;
     }

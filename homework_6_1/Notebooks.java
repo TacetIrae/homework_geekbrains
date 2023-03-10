@@ -8,12 +8,15 @@ public class Notebooks {
     private final int price;
     private final String model;
 
-    public Notebooks(String name, int amountRAM, String operatingSystem, int price, String model) {
+    private final String color;
+
+    public Notebooks(String name, int amountRAM, String operatingSystem, int price, String model, String color) {
         this.name = name;
         this.amountRAM = amountRAM;
         this.operatingSystem = operatingSystem;
         this.price = price;
         this.model = model;
+        this.color = color;
     }
 
 
@@ -24,7 +27,8 @@ public class Notebooks {
                 "количество опретивной памяти:" + amountRAM +
                 ", операционная система: " + operatingSystem + '\'' +
                 ", цена: " + price +
-                ", модель: " + model;
+                ", модель: " + model+
+                ", цвет: " + color;
     }
 
     public String getName() {
@@ -47,6 +51,9 @@ public class Notebooks {
 
     public String getModel() {
         return model;
+    }
+    public String getColor(){
+        return color;
     }
 
 }
