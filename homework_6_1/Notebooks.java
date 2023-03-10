@@ -3,6 +3,8 @@ public class Notebooks {
 
     private final String name;
 
+    private final int HardDrive;
+
     private final int amountRAM;
     private final String operatingSystem;
     private final int price;
@@ -10,8 +12,9 @@ public class Notebooks {
 
     private final String color;
 
-    public Notebooks(String name, int amountRAM, String operatingSystem, int price, String model, String color) {
+    public Notebooks(String name, int HardDrive, int amountRAM, String operatingSystem, int price, String model, String color) {
         this.name = name;
+        this.HardDrive = HardDrive;
         this.amountRAM = amountRAM;
         this.operatingSystem = operatingSystem;
         this.price = price;
@@ -24,6 +27,7 @@ public class Notebooks {
     @Override
     public String toString() {
         return "Ноутбук: (" + name + "): " +
+                ", размер жесткого диска:" + HardDrive+
                 "количество опретивной памяти:" + amountRAM +
                 ", операционная система: " + operatingSystem + '\'' +
                 ", цена: " + price +
@@ -34,6 +38,10 @@ public class Notebooks {
     public String getName() {
         return name;
     }
+    public int getHardDrive(){
+        return HardDrive;
+    }
+
 
     public int getAmountRAM() {
         return amountRAM;

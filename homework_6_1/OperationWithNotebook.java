@@ -22,6 +22,7 @@ public class OperationWithNotebook {
 
             switch (criterion.property) {
                 case "name" -> valueNotebooks = notebook.getName();
+                case "HardDrive" -> valueNotebooks = notebook.getHardDrive();
                 case "amountRAM" -> valueNotebooks = notebook.getAmountRAM();
                 case "operatingSystem" -> valueNotebooks = notebook.getOperatingSystem();
                 case "price" -> valueNotebooks = notebook.getPrice();
@@ -80,6 +81,7 @@ public class OperationWithNotebook {
         Map<String, String> map = new HashMap<>();
 
         map.put("name", "Наименование");
+        map.put("HardDrive", "Объем жесткого диска ");
         map.put("amountRAM", "Объем оперативной памяти");
         map.put("operatingSystem", "Операционная система");
         map.put("price", "цена");
@@ -93,6 +95,7 @@ public class OperationWithNotebook {
     public List<String> propertiesForFilter(){
         List<String> list = new ArrayList<>();
         list.add("name");
+        list.add("HardDrive");
         list.add("amountRAM");
         list.add("operatingSystem");
         list.add("price");
@@ -114,14 +117,15 @@ public class OperationWithNotebook {
 
         return scanner.next();
     }
-
     public Set<String> quantitativeSelection(){
         Set<String> set = new HashSet<>();
+        set.add("HardDrive");
         set.add("amountRAM");
         set.add("price");
 
         return set;
     }
+
 
 
     public void start(){
