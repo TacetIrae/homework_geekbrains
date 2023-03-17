@@ -1,6 +1,14 @@
-public class BirdChicken extends AnimalBird, AnimalBase {
+public class BirdChicken extends AnimalBird implements AnimalBase {
+    public BirdChicken(int height, int weight, String EyeColor, int altitude) {
+        super(height, weight, EyeColor, altitude);
+    }
+
     @Override
     public void printInfo() {
+        System.out.printf("Height:%d\n" +
+                "Weight:%d\n" +
+                "Eye Color:%s\n" +
+                "Altitude:%d", height,weight,EyeColor,altitude);
 
     }
 

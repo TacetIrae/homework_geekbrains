@@ -1,4 +1,4 @@
-public class HomeDog extends AnimalBase implements AnimalHome{
+public class HomeDog implements AnimalBase,AnimalHome {
 
 
     @Override
