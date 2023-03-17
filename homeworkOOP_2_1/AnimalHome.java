@@ -4,6 +4,7 @@ public interface AnimalHome{
     boolean isInjected = false;
     String FurColor = null ;
     String DateBirth= null;
+    public AnimalHome(String An)
 
     public void NiceBoy();
 

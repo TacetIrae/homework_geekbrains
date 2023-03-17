@@ -1,18 +1,18 @@
 public interface AnimalBase {
-    int height=0;
+    public static final int height=0;
 
-    int weight = 0;
+    public static final int weight = 0;
 
-    String EyeColor = null;
+    public static final String EyeColor = null;
 
-    public void sound();
+    public abstract void sound();
 
-    public void printInfo();
+    public abstract void printInfo();
 
-    public int getHeight();
+    public abstract int getHeight();
 
-    public int getWeight();
+    public abstract int getWeight();
 
-    public String getEyeColor();
+    public abstract String getEyeColor();
 
 }

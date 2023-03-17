@@ -1,5 +1,5 @@
 
-public class HomeCat implements AnimalBase,AnimalHome{
+public class HomeCat extends AnimalBase implements AnimalHome{
 
 
     @Override
@@ -64,6 +64,9 @@ public class HomeCat implements AnimalBase,AnimalHome{
     @Override
     public String getEyeColor() {
         return EyeColor;
+    }
+    public HomeCat(int h,int w,String eC,String name,String k,boolean iJ,String fC,String dB){
+        super(height,weight,EyeColor,AnimalName,kind,isInjected,FurColor,DateBirth);
     }
 
 }

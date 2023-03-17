@@ -1,4 +1,4 @@
-public class BirdChicken extends AnimalBird implements AnimalBase{
+public class BirdChicken extends AnimalBird, AnimalBase {
     @Override
     public void printInfo() {
 

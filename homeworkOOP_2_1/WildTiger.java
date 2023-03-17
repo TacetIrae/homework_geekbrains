@@ -1,36 +1,41 @@
-public class WildTiger implements AnimalBase,AnimalWild{
+public class WildTiger extends AnimalBase implements AnimalWild{
     @Override
     public void sound() {
+        System.out.println("Rrrrrr");
 
     }
 
     @Override
     public void printInfo() {
+        System.out.printf("Height%d\n" +
+                "Weight:%d\n" +
+                "Eye Color:%s\n" +
+                "Living place%s\n" + "Living data%s",height,weight,EyeColor,livingPlace,livingDate);
 
     }
 
     @Override
     public int getHeight() {
-        return 0;
+        return height;
     }
 
     @Override
     public int getWeight() {
-        return 0;
+        return weight;
     }
 
     @Override
     public String getEyeColor() {
-        return null;
+        return EyeColor;
     }
 
     @Override
     public String getLivingPlace() {
-        return null;
+        return livingPlace;
     }
 
     @Override
     public String getLivingDate() {
-        return null;
+        return livingDate;
     }
 }

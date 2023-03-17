@@ -1,4 +1,4 @@
-public class WildWolf implements AnimalBase,AnimalWild{
+public class WildWolf extends AnimalBase implements AnimalWild{
 
     @Override
     public void sound() {
@@ -7,6 +7,10 @@ public class WildWolf implements AnimalBase,AnimalWild{
 
     @Override
     public void printInfo() {
+        System.out.printf("Height%d\n" +
+                "Weight:%d\n" +
+                "Eye Color:%s\n" +
+                "Living place%s\n" + "Living data%s",height,weight,EyeColor,livingPlace,livingDate);
 
     }
 
@@ -23,5 +27,15 @@ public class WildWolf implements AnimalBase,AnimalWild{
     @Override
     public String getEyeColor() {
         return EyeColor;
+    }
+
+    @Override
+    public String getLivingPlace() {
+        return livingPlace;
+    }
+
+    @Override
+    public String getLivingDate() {
+        return livingDate;
     }
 }

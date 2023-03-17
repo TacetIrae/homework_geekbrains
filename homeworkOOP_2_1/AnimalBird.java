@@ -1,4 +1,4 @@
-public abstract class AnimalBird implements AnimalBase{
+public abstract class AnimalBird extends AnimalBase {
     @Override
     public void sound() {
 
