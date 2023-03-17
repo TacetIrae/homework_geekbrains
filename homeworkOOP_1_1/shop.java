@@ -121,9 +121,9 @@ public class shop {
         all.addAll(setDetox);
         all.addAll(setDrinks);
 
-        for(int i =0; i<all.size();i++){
-            System.out.println(all.toString());
-        }
+
+        Program prog = new Program(all);
+        prog.start();
 
 
 

@@ -3,11 +3,46 @@ import java.util.*;
 public class Program {
 
     private static Scanner scanner = new Scanner(System.in);
+    protected Set<Object> Items;
+
+    protected List<Criterion> criterionList = new ArrayList<>();
 
     public void printList(){
-
+        for (Object item:Items){
+            if(isCorrect((items) item)){
+                System.out.println(item);
+            }
         }
-
+    }
+    public boolean isCorrect(items item){
+        for(Criterion criterion: criterionList){
+            Object value;
+            switch(criterion.property){
+                case"Index" -> value = item.getIndex();
+                case"name" -> value = item.getName();
+                case"price"-> value = item.getPrice();
+                case"measures"-> value = item.getMeasure();
+                case"quantity"-> value = item.getQuantity();
+                default -> {
+                    continue;
+                }
+            }
+            if (criterion.value!= null&&!criterion.value.equals(value)){
+                return false;
+            }
+            if(criterion.maxValue != null && criterion.maxValue<Double.parseDouble(Objects.toString(value))){
+                return false;
+            }
+            if(criterion.minValue!= null&& criterion.minValue>Double.parseDouble(Objects.toString(value))){
+                return false;
+            }
+        }
+        return true;
+    }
+    public Program (Set<Object> Items){
+        scanner = new Scanner(System.in);
+        this.Items = Collections.unmodifiableSet(Items);
+    }
 
 
     public List<String> propertiesForFilters(){
