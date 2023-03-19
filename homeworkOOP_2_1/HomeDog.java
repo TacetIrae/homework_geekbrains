@@ -1,5 +1,9 @@
 public class HomeDog implements AnimalBase,AnimalHome {
 
+    public HomeDog(int height, int weight, String EyeColor){
+        this.getHeight() = height;
+    }
+
 
     @Override
     public void sound() {

@@ -1,4 +1,4 @@
-public class WildWolf extends AnimalBase implements AnimalWild{
+public class WildWolf  implements AnimalBase,AnimalWild{
 
     @Override
     public void sound() {

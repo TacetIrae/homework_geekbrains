@@ -122,7 +122,7 @@ public class shop {
         all.addAll(setDrinks);
 
 
-        Program prog = new Program(all);
+        fCollection prog = new fCollection(all);
         prog.start();
 
 
