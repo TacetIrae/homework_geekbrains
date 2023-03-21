@@ -15,7 +15,8 @@ public class ViewNotes {
     }
     public String getNotes(){
         System.out.println("Введите запись, которую вы хотите записать:" );
-        return scanner.nextLine();
+        String line = scanner.nextLine();
+        return line;
     }
     public int getNotesIndex(){
         System.out.println("Введите индекс записи:");

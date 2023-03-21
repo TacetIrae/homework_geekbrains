@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class NotesModel {
     private List<String> notes;
@@ -8,6 +9,7 @@ public class NotesModel {
         notes = new ArrayList<>();
     }
     public void addNotes(String note){
+
         notes.add(note);
     }
     public List<String> getNotes(){
