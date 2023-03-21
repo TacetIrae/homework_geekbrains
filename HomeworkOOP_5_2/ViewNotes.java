@@ -1,6 +1,5 @@
 import java.util.List;
 import java.util.Scanner;
-import java.util.SortedMap;
 
 public class ViewNotes {
     private Scanner scanner;
@@ -14,11 +13,20 @@ public class ViewNotes {
         this.presenter =presenter;
     }
     public String getNotes(){
-        System.out.println("Введите запись, которую вы хотите записать:" );
-        String line = scanner.nextLine();
-        return line;
+        scanner.nextLine();
+        System.out.println("Введите запись");
+        String text = scanner.nextLine();
+
+        if( text.trim().isEmpty()){
+            System.out.println("Не может быть пустым");
+            return "";
+        }
+        return text;
+
+
     }
     public int getNotesIndex(){
+        scanner.nextLine();
         System.out.println("Введите индекс записи:");
         return scanner.nextInt();
     }
@@ -41,6 +49,7 @@ public class ViewNotes {
 
     }
     public int getMenuChoice(){
+        scanner.nextLine();
         System.out.println("Введите выбранную вами функцию:");
         return scanner.nextInt();
     }
