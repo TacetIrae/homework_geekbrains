@@ -9,14 +9,16 @@
       <sourceFolder url="file://$MODULE_DIR$/Homework_5_2" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/homework_5_1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/homework_6_1" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/homeworkOOP_4_1" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/HomeworkOOP_5_2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/finalProjOOP" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/homeworkOOP_1_1" />
       <excludeFolder url="file://$MODULE_DIR$/homeworkOOP_2_1" />
       <excludeFolder url="file://$MODULE_DIR$/homeworkOOP_3_1" />
       <excludeFolder url="file://$MODULE_DIR$/HomeworkOOP_5_1" />
+      <excludeFolder url="file://$MODULE_DIR$/HomeworkOOP_5_2" />
+      <excludeFolder url="file://$MODULE_DIR$/homeworkOOP_4_1" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="javafx-sdk-17.0" level="project" />
   </component>
 </module>
